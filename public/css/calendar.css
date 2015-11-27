@@ -1,0 +1,116 @@
+/*
+ * CSS Calendar
+ * Tim Wright
+ * Chris Coyier
+ -----------------------------*/
+
+
+
+.months
+{
+	width:63em;
+	margin:0 auto;
+	display:block; 
+	min-height: 100px;
+	padding: 12px 0 0 20px;
+}
+
+.months p
+{
+	font-size:2.1em;
+}
+
+.buttonMonths
+{
+	font-size:2em;
+	background-color: #485563;
+}
+
+.months p, .buttonMonths
+{
+	margin: 0 auto;
+	float: left;
+	padding: 20px;
+	width: 9em;
+	text-align: center;
+}
+
+ol.calendar        
+{	
+	width:62em;
+	margin:0 auto;
+	display:block; 
+	min-height: 200px;
+	background: url(/img/calendar/tl.png) top left no-repeat; 
+	padding: 12px 0 0 20px;
+	color: black;
+}
+
+.calendar li {list-style:none;}
+p.link
+{
+	text-align:center;
+	display: block;
+}
+
+/*
+ * Day styles
+ -------------------------*/
+.calendar li li               
+{
+	width:7em;
+	height:7em;
+	float:left;
+	margin:.2em; 
+	padding:.2em;
+	overflow:auto;
+	background: url(/img/calendar/day-bg.png) bottom right no-repeat; 
+}
+
+/*
+ * Day content (UL/OL & P)
+ -------------------------*/
+.calendar li li p             
+{
+	font-size:.7em;
+	display:block;
+}
+.calendar li li ol
+{
+	width:auto;
+}
+.calendar li li ul li,
+.calendar li li ol li  
+{
+	font-size:.7em;
+	display:block;
+	height:auto;
+	width:auto; 
+	background: none;
+	margin:0;
+	padding:.2em 0;
+	float:none;
+}
+
+/*
+ * Holiday class
+ -------------------------*/
+.calendar li li.holiday       {  }
+
+/*
+ * Inactive months
+ -------------------------*/
+li#lastmonth li,
+li#days li,
+li#nextmonth li     
+{ 
+	background: url(/img/calendar/day-bg-inactive.png);
+	color: white;
+}
+
+li#days li
+{
+	text-align: center;
+	line-height: 6em;
+	text-transform: uppercase;
+}
